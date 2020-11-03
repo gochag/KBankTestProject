@@ -1,5 +1,5 @@
 //
-//  VoucherViewController.swift
+//  ReceiptViewController.swift
 //  KBanktTestProject
 //
 //  Created by Tarlan Hekimzade on 31.10.2020.
@@ -9,7 +9,7 @@
 import UIKit
 import PureLayout
 
-enum VoucherItemType{
+enum ReceiptItemType{
     case date
     case ownerCode
     case bankCode
@@ -22,11 +22,11 @@ class ReceiptController: BaseViewController{
     
     //MARK: Variables
     var router:Router!
-    var viewModel:VoucherViewModelProtocol!
+    var viewModel:ReceiptViewModelProtocol!
     
-    let items:[VoucherItemType] = [.date,.ownerCode,.bankCode,.discount,.tax,.price]
+    let items:[ReceiptItemType] = [.date,.ownerCode,.bankCode,.discount,.tax,.price]
 
-    var voucherView = UIView()
+    var receiptView = UIView()
     var confirmButton = UIButton()
 
     let stackView:UIStackView = {
@@ -44,56 +44,41 @@ class ReceiptController: BaseViewController{
         return label
     }()
     
-    let itemOne = VoucherItem()
-    let itemTwo = VoucherItem()
+    let itemOne = ReceiptItem()
+    let itemTwo = ReceiptItem()
 
-    let itemThree = VoucherItem()
+    let itemThree = ReceiptItem()
 
-    let itemFore = VoucherItem()
+    let itemFore = ReceiptItem()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initVoucherView()
+        self.navigationItem.hidesBackButton = true
+        
+        initReceiptView()
         initConfirmButton()
+        updateViewData()
+        getReceiptData()
     }
     
-    //Mark: init view
-    private func initVoucherView(){
-        view.addSubview(voucherView)
+    //MARK: init view
+    private func initReceiptView(){
+        view.addSubview(receiptView)
         
-        voucherView.backgroundColor = .white
-        voucherView.autoSetDimension(.height, toSize: UIScreen.main.bounds.height/2)
-        voucherView.autoPinEdge(toSuperviewEdge: .left, withInset: 48)
-        voucherView.autoPinEdge(toSuperviewEdge: .right, withInset: 48)
-        voucherView.autoPinEdge(toSuperviewEdge: .top)
+        receiptView.backgroundColor = .white
+        receiptView.autoSetDimension(.height, toSize: UIScreen.main.bounds.height/2)
+        receiptView.autoPinEdge(toSuperviewEdge: .left, withInset: 48)
+        receiptView.autoPinEdge(toSuperviewEdge: .right, withInset: 48)
+        receiptView.autoPinEdge(toSuperviewEdge: .top)
         
-        voucherView.addSubview(stackView)
+        receiptView.addSubview(stackView)
         stackView.autoPinEdge(toSuperviewEdge: .top, withInset: 16)
         stackView.autoPinEdge(toSuperviewEdge: .right, withInset: 16)
         stackView.autoPinEdge(toSuperviewEdge: .bottom, withInset: 70)
         stackView.autoPinEdge(toSuperviewEdge: .left, withInset: 16)
         stackView.addArrangedSubview(titleLabel)
-        items.forEach { type in
-            let voucherItme = VoucherItem()
-            stackView.addArrangedSubview(voucherItme)
-            
-            switch type {
-            case .date:
-                voucherItme.updateView(title: "Date:", value: "01.11.2020")
-            case .bankCode:
-                voucherItme.updateView(title: "Bank:", value: "01.11.2020")
-            case .ownerCode:
-                voucherItme.updateView(title: "Owner:", value: "01.11.2020")
-            case .discount:
-                voucherItme.updateView(title: "Discount:", value: "01.11.2020")
-            case .tax:
-                voucherItme.updateView(title: "Tax:", value: "01.11.2020")
-            case .price:
-                voucherItme.updateView(title: "Price:", value: "01.11.2020")
-            }
-        }
     }
     
     private func initConfirmButton(){
@@ -101,7 +86,7 @@ class ReceiptController: BaseViewController{
         confirmButton.autoAlignAxis(toSuperviewAxis: .vertical)
         confirmButton.autoPinEdge(toSuperviewEdge: .left, withInset: 48)
         confirmButton.autoPinEdge(toSuperviewEdge: .right, withInset: 48)
-        confirmButton.autoPinEdge(.top, to: .bottom, of: voucherView, withOffset: 32)
+        confirmButton.autoPinEdge(.top, to: .bottom, of: receiptView, withOffset: 32)
         confirmButton.autoSetDimension(.height, toSize: 50)
         
         confirmButton.setTitle("Ok", for: .normal)
@@ -112,12 +97,42 @@ class ReceiptController: BaseViewController{
         confirmButton.addTarget(self, action: #selector(clickConfirm), for: .touchUpInside)
     }
     
+    //MARK: View model
+    
+    private func getReceiptData(){
+        viewModel.featchData()
+    }
+    
+    private func updateViewData(){
+        viewModel.updateView = {[weak self] data in
+            self?.items.forEach { type in
+                let receiptItme = ReceiptItem()
+                self?.stackView.addArrangedSubview(receiptItme)
+                
+                switch type {
+                case .date:
+                    receiptItme.updateView(title: "Date:", value: data.date)
+                case .bankCode:
+                    receiptItme.updateView(title: "Service:", value: data.details.first?.value ?? "no data")
+                case .ownerCode:
+                    receiptItme.updateView(title: "Subscriber:", value: data.details.last?.value ?? " no data")
+                case .discount:
+                    receiptItme.updateView(title: "Discount:", value: "01.11.2020")
+                case .tax:
+                    receiptItme.updateView(title: "Tax:", value: "01.11.2020")
+                case .price:
+                    receiptItme.updateView(title: "Price:", value: data.amount.first?.value ?? "0")
+                }
+            }
+        }
+    }
+    
     @objc func clickConfirm(){
         router.popToRoot()
     }
 }
 
-class VoucherItem:UIView{
+class ReceiptItem:UIView{
     private var stackView = UIStackView()
     
     var title:UILabel = {

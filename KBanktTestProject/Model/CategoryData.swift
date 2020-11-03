@@ -9,15 +9,21 @@
 import Foundation
 import SwiftyJSON
 
-class CategoryData:KData{
+class CategoryData{
     
-    var id:Int
+    var id:String
     var name:String
     var providers:[ProviderData]
     
     init(_ json:JSON) {
-        self.id = json["id"].intValue
+        self.id = json["id"].stringValue
         self.name = json["name"].stringValue
         self.providers = json["providers"].arrayValue.map{ProviderData($0)}
+    }
+    
+    init(_ category:Category) {
+        self.id = category.id ?? ""
+        self.name = category.name ?? ""
+        self.providers = category.providers?.map{ProviderData($0 as! Provider)} ?? [ProviderData]()
     }
 }

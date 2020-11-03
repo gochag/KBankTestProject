@@ -8,10 +8,16 @@
 
 import Foundation
 
-protocol ProviderViewModelProtocol{
-    
-}
-
 class ProviderViewModel: ProviderViewModelProtocol{
+    var updateView: ((ViewData<CategoryData>) -> Void)?
     
+    let category:CategoryData
+    
+    init(category:CategoryData) {
+        self.category = category
+    }
+    
+    func featchData() {
+        self.updateView?(.success(category))
+    }
 }

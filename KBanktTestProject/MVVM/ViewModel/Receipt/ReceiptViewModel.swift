@@ -7,11 +7,23 @@
 //
 
 import Foundation
-
-protocol ReceiptViewModelProtocol {
-    
-}
+import PromiseKit
 
 class ReceiptViewModel:ReceiptViewModelProtocol{
     
+    var updateView: ((ReceiptData) -> Void)?
+    
+    let network:NetworkServiceProtocol
+    
+    init(network:NetworkServiceProtocol) {
+        self.network = network
+    }
+    
+    func featchData() {
+        network.getReceipt().done {[weak self] receiptData in
+            self?.updateView?(receiptData)
+        }.catch{ error in
+            print(error)
+        }
+    }
 }

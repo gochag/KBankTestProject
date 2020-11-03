@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName=".Category" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="providers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Provider" inverseName="category" inverseEntity="Provider"/>
+    </entity>
+    <entity name="CustomField" representedClassName="CustomField" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="5" defaultValueString="1" usesScalarValueType="YES"/>
+        <relationship name="options" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pair" inverseName="field" inverseEntity="Pair"/>
+        <relationship name="provider" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Provider" inverseName="fields" inverseEntity="Provider"/>
+    </entity>
+    <entity name="Pair" representedClassName="Pair" syncable="YES" codeGenerationType="class">
+        <attribute name="k" optional="YES" attributeType="String"/>
+        <attribute name="v" optional="YES" attributeType="String"/>
+        <relationship name="field" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CustomField" inverseName="options" inverseEntity="CustomField"/>
+    </entity>
+    <entity name="Provider" representedClassName="Provider" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Category" inverseName="providers" inverseEntity="Category"/>
+        <relationship name="fields" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CustomField" inverseName="provider" inverseEntity="CustomField"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="CustomField" positionX="550.37890625" positionY="-20.921875" width="128" height="118"/>
+        <element name="Pair" positionX="-79.0546875" positionY="183.3359375" width="128" height="88"/>
+        <element name="Provider" positionX="170.4921875" positionY="-25.3671875" width="128" height="103"/>
+    </elements>
 </model>

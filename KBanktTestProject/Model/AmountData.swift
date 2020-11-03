@@ -10,5 +10,11 @@ import Foundation
 import SwiftyJSON
 
 class AmountData{
-    
+    var value:String
+    var currency:String
+
+    init(_ json:JSON) {
+        self.value = json["value"].stringValue
+        self.currency = json["currency"].stringValue
+    }
 }

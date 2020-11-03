@@ -1,94 +1,154 @@
 [
    {
-      "id":1,
+      "id":"1",
       "name":"Operator",
       "providers":[
          {
-            "id":1,
+            "id":"1",
             "name":"Bakcel",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      },
                      {
-                        "k":2,
+                        "k":"2",
                         "v":"Sumqayit"
                      },
                      {
-                        "k":3,
+                        "k":"3",
                         "v":"Gence"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":2,
+            "id":"2",
             "name":"Azercell",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      },
                      {
-                        "k":2,
+                        "k":"2",
                         "v":"Sumqayit"
                      },
                      {
-                        "k":3,
+                        "k":"3",
                         "v":"Gence"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":3,
+            "id":"3",
             "name":"Nar Mobile",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      },
                      {
-                        "k":2,
+                        "k":"2",
                         "v":"Sumqayit"
                      },
                      {
-                        "k":3,
+                        "k":"3",
                         "v":"Gence"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"o4",
+            "name":"Saz Mobile",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     },
+                     {
+                        "k":"2",
+                        "v":"Sumqayit"
+                     },
+                     {
+                        "k":"3",
+                        "v":"Gence"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"o5",
+            "name":"Delta",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     },
+                     {
+                        "k":"2",
+                        "v":"Sumqayit"
+                     },
+                     {
+                        "k":"3",
+                        "v":"Gence"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -96,71 +156,71 @@
       ]
    },
    {
-      "id":2,
-      "name":"Operator",
+      "id":"2",
+      "name":"Utility services",
       "providers":[
          {
-            "id":4,
+            "id":"4",
             "name":"AzerSu",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":5,
+            "id":"5",
             "name":"AzerIsiq",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":6,
+            "id":"6",
             "name":"AzeriQaz",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -168,187 +228,159 @@
       ]
    },
    {
-      "id":3,
-      "name":"Operator",
+      "id":"3",
+      "name":"Internet",
       "providers":[
          {
-            "id":7,
-            "name":"AzerSu",
+            "id":"7",
+            "name":"Aile Net",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":8,
-            "name":"AzerIsiq",
+            "id":"8",
+            "name":"Avirtel",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":9,
-            "name":"AzeriQaz",
+            "id":"9",
+            "name":"Azdatacom",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":10,
-            "name":"AzeriQaz",
+            "id":"10",
+            "name":"Citynet",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":11,
-            "name":"AzeriQaz",
+            "id":"11",
+            "name":"KATV1",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":12,
-            "name":"AzeriQaz",
+            "id":"12",
+            "name":"Teleport",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
-                  "label":"Subscriber"
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "id":4,
-      "name":"Operator",
-      "providers":[
-         {
-            "id":13,
-            "name":"AzerSu",
-            "fields":[
-               {
-                  "id":"city_id",
-                  "type":4,
-                  "label":"City",
-                  "options":[
-                     {
-                        "k":1,
-                        "v":"Baku"
-                     }
-                  ]
-               },
-               {
-                  "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
          },
          {
-            "id":14,
-            "name":"AzerIsiq",
+            "id":"internet12",
+            "name":"Baktelekom",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -356,27 +388,115 @@
       ]
    },
    {
-      "id":5,
-      "name":"Operator",
+      "id":"4",
+      "name":"Сable TV",
       "providers":[
          {
-            "id":15,
-            "name":"AzerSu",
+            "id":"13",
+            "name":"Aile TV",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"14",
+            "name":"Azeri TV",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"tv14",
+            "name":"Nar TV",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"tv15",
+            "name":"Cityline TV",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"tv16",
+            "name":"ATV+",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -384,27 +504,93 @@
       ]
    },
    {
-      "id":6,
-      "name":"Operator",
+      "id":"5",
+      "name":"Taxes",
       "providers":[
          {
-            "id":15,
-            "name":"AzerSu",
+            "id":"15",
+            "name":"BNA",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"taxes16",
+            "name":"DGK",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"taxes17",
+            "name":"DIN",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"taxes18",
+            "name":"ETSN",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -412,27 +598,93 @@
       ]
    },
    {
-      "id":7,
-      "name":"Operator",
+      "id":"6",
+      "name":"Credit",
       "providers":[
          {
-            "id":15,
-            "name":"AzerSu",
+            "id":"15",
+            "name":"Kapital Bank",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"credit16",
+            "name":"Bank of Baku",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"credit17",
+            "name":"Unibank",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
+                  "label":"Subscriber"
+               }
+            ]
+         },
+         {
+            "id":"credit18",
+            "name":"Rabitebank",
+            "fields":[
+               {
+                  "id":"city_id",
+                  "type":"4",
+                  "label":"City",
+                  "options":[
+                     {
+                        "k":"1",
+                        "v":"Baku"
+                     }
+                  ]
+               },
+               {
+                  "id":"subscriber_id",
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -440,27 +692,27 @@
       ]
    },
    {
-      "id":8,
-      "name":"Operator",
+      "id":"7",
+      "name":"Online Service",
       "providers":[
          {
-            "id":15,
+            "id":"15",
             "name":"AzerSu",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -468,27 +720,27 @@
       ]
    },
    {
-      "id":9,
-      "name":"Operator",
+      "id":"8",
+      "name":"Charity",
       "providers":[
          {
-            "id":15,
+            "id":"15",
             "name":"AzerSu",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]
@@ -496,167 +748,27 @@
       ]
    },
    {
-      "id":10,
-      "name":"Operator",
+      "id":"9",
+      "name":"Onther",
       "providers":[
          {
-            "id":15,
+            "id":"15",
             "name":"AzerSu",
             "fields":[
                {
                   "id":"city_id",
-                  "type":4,
+                  "type":"4",
                   "label":"City",
                   "options":[
                      {
-                        "k":1,
+                        "k":"1",
                         "v":"Baku"
                      }
                   ]
                },
                {
                   "id":"subscriber_id",
-                  "type":1,
-                  "label":"Subscriber"
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "id":11,
-      "name":"Operator",
-      "providers":[
-         {
-            "id":15,
-            "name":"AzerSu",
-            "fields":[
-               {
-                  "id":"city_id",
-                  "type":4,
-                  "label":"City",
-                  "options":[
-                     {
-                        "k":1,
-                        "v":"Baku"
-                     }
-                  ]
-               },
-               {
-                  "id":"subscriber_id",
-                  "type":1,
-                  "label":"Subscriber"
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "id":12,
-      "name":"Operator",
-      "providers":[
-         {
-            "id":15,
-            "name":"AzerSu",
-            "fields":[
-               {
-                  "id":"city_id",
-                  "type":4,
-                  "label":"City",
-                  "options":[
-                     {
-                        "k":1,
-                        "v":"Baku"
-                     }
-                  ]
-               },
-               {
-                  "id":"subscriber_id",
-                  "type":1,
-                  "label":"Subscriber"
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "id":13,
-      "name":"Operator",
-      "providers":[
-         {
-            "id":15,
-            "name":"AzerSu",
-            "fields":[
-               {
-                  "id":"city_id",
-                  "type":4,
-                  "label":"City",
-                  "options":[
-                     {
-                        "k":1,
-                        "v":"Baku"
-                     }
-                  ]
-               },
-               {
-                  "id":"subscriber_id",
-                  "type":1,
-                  "label":"Subscriber"
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "id":14,
-      "name":"Operator",
-      "providers":[
-         {
-            "id":15,
-            "name":"AzerSu",
-            "fields":[
-               {
-                  "id":"city_id",
-                  "type":4,
-                  "label":"City",
-                  "options":[
-                     {
-                        "k":1,
-                        "v":"Baku"
-                     }
-                  ]
-               },
-               {
-                  "id":"subscriber_id",
-                  "type":1,
-                  "label":"Subscriber"
-               }
-            ]
-         }
-      ]
-   },
-   {
-      "id":15,
-      "name":"Operator",
-      "providers":[
-         {
-            "id":15,
-            "name":"AzerSu",
-            "fields":[
-               {
-                  "id":"city_id",
-                  "type":4,
-                  "label":"City",
-                  "options":[
-                     {
-                        "k":1,
-                        "v":"Baku"
-                     }
-                  ]
-               },
-               {
-                  "id":"subscriber_id",
-                  "type":1,
+                  "type":"1",
                   "label":"Subscriber"
                }
             ]

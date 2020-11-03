@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol ReceiptViewModelProtocol {
+    var updateView:((ReceiptData)->Void)? {get set}
+    func featchData()
+}

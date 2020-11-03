@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+protocol CategoryViewModelProtocol {
+    var updateCategories:((ViewData<[CategoryData]>) -> ())? { get set }
+    func loadData()
+    func loadCacheData()
+}
+
+enum CategoryError:Error{
+    case NoInternetCacheSaved
+    case NoInternet
+}

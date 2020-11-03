@@ -6,4 +6,18 @@
 //  Copyright © 2020 Tarlan Hekimzade. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol RouterMain {
+    var navigationController : UINavigationController? { get set }
+    var builder:Builder? {get set}
+}
+
+protocol RouterProtocol : RouterMain{
+    func initialViewController()
+    func popToRoot()
+    func openProvider(category:CategoryData)
+    func openCheckout(_ provider:ProviderData)
+    func openPayment()
+    func openReceipt()
+}

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+enum ViewData<T>{
+    case loading
+    case success(T)
+    case error(Error)
+}

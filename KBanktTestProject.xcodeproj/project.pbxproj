@@ -3,18 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402FB4E6254DCE2700A737B9 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4E5254DCE2700A737B9 /* CategoryData.swift */; };
+		402FB4E8254DCE8100A737B9 /* ErrorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4E7254DCE8100A737B9 /* ErrorData.swift */; };
+		402FB4EA254DCE9300A737B9 /* ProviderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4E9254DCE9300A737B9 /* ProviderData.swift */; };
+		402FB4EC254DCEAB00A737B9 /* CustomFieldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4EB254DCEAB00A737B9 /* CustomFieldData.swift */; };
+		402FB4EE254DCECF00A737B9 /* ReceiptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4ED254DCECF00A737B9 /* ReceiptData.swift */; };
+		402FB4F0254DCEF900A737B9 /* AmountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4EF254DCEF900A737B9 /* AmountData.swift */; };
+		402FB4FA254DD1FB00A737B9 /* UIFontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB4F9254DD1FB00A737B9 /* UIFontExt.swift */; };
+		402FB4FF254DD29200A737B9 /* NeuzeitGro-Bol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402FB4FC254DD24A00A737B9 /* NeuzeitGro-Bol.ttf */; };
+		402FB500254DD29500A737B9 /* NeuzeitGro-Lig.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402FB4FD254DD24A00A737B9 /* NeuzeitGro-Lig.ttf */; };
+		402FB501254DD29700A737B9 /* NeuzeitGro-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402FB4FB254DD24A00A737B9 /* NeuzeitGro-Reg.ttf */; };
+		402FB503254DD37E00A737B9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402FB502254DD37E00A737B9 /* BaseViewController.swift */; };
 		404DE717254DC32D00A16AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE716254DC32D00A16AB5 /* AppDelegate.swift */; };
 		404DE719254DC32D00A16AB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE718254DC32D00A16AB5 /* SceneDelegate.swift */; };
-		404DE71B254DC32D00A16AB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE71A254DC32D00A16AB5 /* ViewController.swift */; };
-		404DE71E254DC32D00A16AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404DE71C254DC32D00A16AB5 /* Main.storyboard */; };
+		404DE71B254DC32D00A16AB5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE71A254DC32D00A16AB5 /* CategoryViewController.swift */; };
 		404DE721254DC32D00A16AB5 /* KBanktTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 404DE71F254DC32D00A16AB5 /* KBanktTestProject.xcdatamodeld */; };
 		404DE723254DC32F00A16AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404DE722254DC32F00A16AB5 /* Assets.xcassets */; };
 		404DE726254DC32F00A16AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404DE724254DC32F00A16AB5 /* LaunchScreen.storyboard */; };
 		404DE731254DC32F00A16AB5 /* KBanktTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE730254DC32F00A16AB5 /* KBanktTestProjectTests.swift */; };
+		404DE73F254DC6F600A16AB5 /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE73E254DC6F600A16AB5 /* ProviderViewController.swift */; };
+		404DE741254DC71000A16AB5 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE740254DC71000A16AB5 /* PaymentViewController.swift */; };
+		404DE743254DC73A00A16AB5 /* ReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE742254DC73A00A16AB5 /* ReceiptController.swift */; };
+		404DE747254DC80200A16AB5 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE746254DC80200A16AB5 /* CategoryViewModel.swift */; };
+		404DE74A254DC82200A16AB5 /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE749254DC82200A16AB5 /* ProviderViewModel.swift */; };
+		404DE74C254DC83A00A16AB5 /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE74B254DC83A00A16AB5 /* PaymentViewModel.swift */; };
+		404DE74E254DC84800A16AB5 /* ReceiptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE74D254DC84800A16AB5 /* ReceiptViewModel.swift */; };
+		404DE752254DC8C700A16AB5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE751254DC8C700A16AB5 /* Router.swift */; };
+		404DE754254DC8D700A16AB5 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE753254DC8D700A16AB5 /* RouterProtocol.swift */; };
+		404DE757254DC91D00A16AB5 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE756254DC91D00A16AB5 /* Builder.swift */; };
+		404DE759254DC92E00A16AB5 /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404DE758254DC92E00A16AB5 /* BuilderProtocol.swift */; };
+		406DAF662550092F00AB1886 /* PairData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DAF652550092E00AB1886 /* PairData.swift */; };
+		406DAF682550436300AB1886 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DAF672550436300AB1886 /* StringExt.swift */; };
+		406DAF6A25508CB300AB1886 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DAF6925508CB300AB1886 /* UIViewExt.swift */; };
+		406DAF6D2550B03300AB1886 /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DAF6C2550B03300AB1886 /* CheckoutController.swift */; };
+		406DAF702550B9DF00AB1886 /* CheckoutViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DAF6F2550B9DF00AB1886 /* CheckoutViewModelProtocol.swift */; };
+		406DAF722550BA0100AB1886 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406DAF712550BA0100AB1886 /* CheckoutViewModel.swift */; };
+		40C5CFA3254DD62F00FF0F39 /* CategoryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFA2254DD62F00FF0F39 /* CategoryLayout.swift */; };
+		40C5CFA6254DD7B400FF0F39 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFA5254DD7B400FF0F39 /* CategoryCell.swift */; };
+		40C5CFA9254DF99300FF0F39 /* ProviderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFA8254DF99300FF0F39 /* ProviderCell.swift */; };
+		40C5CFAB254E04E600FF0F39 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFAA254E04E600FF0F39 /* CardView.swift */; };
+		40C5CFAD254E0CB800FF0F39 /* TextFieldWithHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFAC254E0CB800FF0F39 /* TextFieldWithHeader.swift */; };
+		40C5CFAF254EAF4B00FF0F39 /* categorys.json in Resources */ = {isa = PBXBuildFile; fileRef = 40C5CFAE254EAF4B00FF0F39 /* categorys.json */; };
+		40C5CFB2254EAFC900FF0F39 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFB1254EAFC900FF0F39 /* NetworkService.swift */; };
+		40C5CFB4254EAFDB00FF0F39 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFB3254EAFDB00FF0F39 /* NetworkServiceProtocol.swift */; };
+		40C5CFB7254EBDFC00FF0F39 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFB6254EBDFB00FF0F39 /* ViewData.swift */; };
+		40C5CFDB254EE99200FF0F39 /* CDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFDA254EE99200FF0F39 /* CDRepository.swift */; };
+		40C5CFDE254EF15100FF0F39 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFDD254EF15000FF0F39 /* CoreDataManager.swift */; };
+		40C5CFF9254F160B00FF0F39 /* CategoryBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5CFF8254F160B00FF0F39 /* CategoryBusinessLogic.swift */; };
+		40D37EFF2550C527002B450A /* CategoryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D37EFE2550C527002B450A /* CategoryViewModelProtocol.swift */; };
+		40D37F012550C540002B450A /* ProviderViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D37F002550C540002B450A /* ProviderViewModelProtocol.swift */; };
+		40D37F032550C560002B450A /* PaymentViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D37F022550C560002B450A /* PaymentViewModelProtocol.swift */; };
+		40D37F052550C57B002B450A /* ReceiptViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D37F042550C57B002B450A /* ReceiptViewModelProtocol.swift */; };
+		40D37F0725513E19002B450A /* Connnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D37F0625513E19002B450A /* Connnection.swift */; };
+		B4746DA37D1AA3609FF26E02 /* Pods_KBanktTestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD33C5F23228CB6936137E96 /* Pods_KBanktTestProjectTests.framework */; };
+		B9761B3F6759BEC21FD34D4E /* Pods_KBanktTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D936221E52AF4D83000AB0E /* Pods_KBanktTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +74,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1387177CFC1C00105C36D3CF /* Pods-KBanktTestProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBanktTestProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-KBanktTestProjectTests/Pods-KBanktTestProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		402FB4E5254DCE2700A737B9 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		402FB4E7254DCE8100A737B9 /* ErrorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorData.swift; sourceTree = "<group>"; };
+		402FB4E9254DCE9300A737B9 /* ProviderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderData.swift; sourceTree = "<group>"; };
+		402FB4EB254DCEAB00A737B9 /* CustomFieldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldData.swift; sourceTree = "<group>"; };
+		402FB4ED254DCECF00A737B9 /* ReceiptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptData.swift; sourceTree = "<group>"; };
+		402FB4EF254DCEF900A737B9 /* AmountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountData.swift; sourceTree = "<group>"; };
+		402FB4F9254DD1FB00A737B9 /* UIFontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExt.swift; sourceTree = "<group>"; };
+		402FB4FB254DD24A00A737B9 /* NeuzeitGro-Reg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuzeitGro-Reg.ttf"; sourceTree = "<group>"; };
+		402FB4FC254DD24A00A737B9 /* NeuzeitGro-Bol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuzeitGro-Bol.ttf"; sourceTree = "<group>"; };
+		402FB4FD254DD24A00A737B9 /* NeuzeitGro-Lig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuzeitGro-Lig.ttf"; sourceTree = "<group>"; };
+		402FB502254DD37E00A737B9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		404DE713254DC32D00A16AB5 /* KBanktTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBanktTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		404DE716254DC32D00A16AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		404DE718254DC32D00A16AB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		404DE71A254DC32D00A16AB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		404DE71D254DC32D00A16AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		404DE71A254DC32D00A16AB5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		404DE720254DC32D00A16AB5 /* KBanktTestProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KBanktTestProject.xcdatamodel; sourceTree = "<group>"; };
 		404DE722254DC32F00A16AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		404DE725254DC32F00A16AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +97,45 @@
 		404DE72C254DC32F00A16AB5 /* KBanktTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KBanktTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		404DE730254DC32F00A16AB5 /* KBanktTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBanktTestProjectTests.swift; sourceTree = "<group>"; };
 		404DE732254DC32F00A16AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404DE73E254DC6F600A16AB5 /* ProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
+		404DE740254DC71000A16AB5 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		404DE742254DC73A00A16AB5 /* ReceiptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptController.swift; sourceTree = "<group>"; };
+		404DE746254DC80200A16AB5 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		404DE749254DC82200A16AB5 /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
+		404DE74B254DC83A00A16AB5 /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
+		404DE74D254DC84800A16AB5 /* ReceiptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewModel.swift; sourceTree = "<group>"; };
+		404DE751254DC8C700A16AB5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		404DE753254DC8D700A16AB5 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		404DE756254DC91D00A16AB5 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		404DE758254DC92E00A16AB5 /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
+		406DAF652550092E00AB1886 /* PairData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairData.swift; sourceTree = "<group>"; };
+		406DAF672550436300AB1886 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		406DAF6925508CB300AB1886 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		406DAF6C2550B03300AB1886 /* CheckoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutController.swift; sourceTree = "<group>"; };
+		406DAF6F2550B9DF00AB1886 /* CheckoutViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModelProtocol.swift; sourceTree = "<group>"; };
+		406DAF712550BA0100AB1886 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		40C5CFA2254DD62F00FF0F39 /* CategoryLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryLayout.swift; sourceTree = "<group>"; };
+		40C5CFA5254DD7B400FF0F39 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		40C5CFA8254DF99300FF0F39 /* ProviderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderCell.swift; sourceTree = "<group>"; };
+		40C5CFAA254E04E600FF0F39 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		40C5CFAC254E0CB800FF0F39 /* TextFieldWithHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithHeader.swift; sourceTree = "<group>"; };
+		40C5CFAE254EAF4B00FF0F39 /* categorys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categorys.json; sourceTree = "<group>"; };
+		40C5CFB1254EAFC900FF0F39 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		40C5CFB3254EAFDB00FF0F39 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		40C5CFB6254EBDFB00FF0F39 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
+		40C5CFDA254EE99200FF0F39 /* CDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDRepository.swift; sourceTree = "<group>"; };
+		40C5CFDD254EF15000FF0F39 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		40C5CFF8254F160B00FF0F39 /* CategoryBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBusinessLogic.swift; sourceTree = "<group>"; };
+		40D37EFE2550C527002B450A /* CategoryViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModelProtocol.swift; sourceTree = "<group>"; };
+		40D37F002550C540002B450A /* ProviderViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModelProtocol.swift; sourceTree = "<group>"; };
+		40D37F022550C560002B450A /* PaymentViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModelProtocol.swift; sourceTree = "<group>"; };
+		40D37F042550C57B002B450A /* ReceiptViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewModelProtocol.swift; sourceTree = "<group>"; };
+		40D37F0625513E19002B450A /* Connnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connnection.swift; sourceTree = "<group>"; };
+		42DA4D805EE12C3B7B8945C5 /* Pods-KBanktTestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBanktTestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-KBanktTestProjectTests/Pods-KBanktTestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D936221E52AF4D83000AB0E /* Pods_KBanktTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBanktTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D62713F1518108F19209A8 /* Pods-KBanktTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBanktTestProject.debug.xcconfig"; path = "Target Support Files/Pods-KBanktTestProject/Pods-KBanktTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BD33C5F23228CB6936137E96 /* Pods_KBanktTestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBanktTestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95F87A11085771C1CF2C608 /* Pods-KBanktTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBanktTestProject.release.xcconfig"; path = "Target Support Files/Pods-KBanktTestProject/Pods-KBanktTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9761B3F6759BEC21FD34D4E /* Pods_KBanktTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +151,103 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4746DA37D1AA3609FF26E02 /* Pods_KBanktTestProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35C076F0F960DAC4420E38BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D936221E52AF4D83000AB0E /* Pods_KBanktTestProject.framework */,
+				BD33C5F23228CB6936137E96 /* Pods_KBanktTestProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		402FB4E4254DCDDE00A737B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				402FB4E5254DCE2700A737B9 /* CategoryData.swift */,
+				402FB4E7254DCE8100A737B9 /* ErrorData.swift */,
+				402FB4E9254DCE9300A737B9 /* ProviderData.swift */,
+				402FB4EB254DCEAB00A737B9 /* CustomFieldData.swift */,
+				402FB4ED254DCECF00A737B9 /* ReceiptData.swift */,
+				402FB4EF254DCEF900A737B9 /* AmountData.swift */,
+				40C5CFB6254EBDFB00FF0F39 /* ViewData.swift */,
+				406DAF652550092E00AB1886 /* PairData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		402FB4F4254DD15E00A737B9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFA4254DD7A300FF0F39 /* Cell */,
+				404DE71A254DC32D00A16AB5 /* CategoryViewController.swift */,
+				40C5CFA2254DD62F00FF0F39 /* CategoryLayout.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		402FB4F5254DD16A00A737B9 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFA7254DF97F00FF0F39 /* Cell */,
+				404DE73E254DC6F600A16AB5 /* ProviderViewController.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		402FB4F6254DD17B00A737B9 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				404DE740254DC71000A16AB5 /* PaymentViewController.swift */,
+				40C5CFAA254E04E600FF0F39 /* CardView.swift */,
+				40C5CFAC254E0CB800FF0F39 /* TextFieldWithHeader.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		402FB4F7254DD18300A737B9 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				404DE742254DC73A00A16AB5 /* ReceiptController.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		402FB4F8254DD1CD00A737B9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				402FB4F9254DD1FB00A737B9 /* UIFontExt.swift */,
+				406DAF672550436300AB1886 /* StringExt.swift */,
+				406DAF6925508CB300AB1886 /* UIViewExt.swift */,
+				40D37F0625513E19002B450A /* Connnection.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		402FB4FE254DD25900A737B9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				402FB4FC254DD24A00A737B9 /* NeuzeitGro-Bol.ttf */,
+				402FB4FD254DD24A00A737B9 /* NeuzeitGro-Lig.ttf */,
+				402FB4FB254DD24A00A737B9 /* NeuzeitGro-Reg.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		404DE70A254DC32D00A16AB5 = {
 			isa = PBXGroup;
 			children = (
 				404DE715254DC32D00A16AB5 /* KBanktTestProject */,
 				404DE72F254DC32F00A16AB5 /* KBanktTestProjectTests */,
 				404DE714254DC32D00A16AB5 /* Products */,
+				CA52947802A7926A111F6579 /* Pods */,
+				35C076F0F960DAC4420E38BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +263,16 @@
 		404DE715254DC32D00A16AB5 /* KBanktTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				404DE716254DC32D00A16AB5 /* AppDelegate.swift */,
-				404DE718254DC32D00A16AB5 /* SceneDelegate.swift */,
-				404DE71A254DC32D00A16AB5 /* ViewController.swift */,
-				404DE71C254DC32D00A16AB5 /* Main.storyboard */,
-				404DE722254DC32F00A16AB5 /* Assets.xcassets */,
-				404DE724254DC32F00A16AB5 /* LaunchScreen.storyboard */,
-				404DE727254DC32F00A16AB5 /* Info.plist */,
+				404DE73B254DC5C200A16AB5 /* AppLayer */,
+				40C5CFF7254F15D200FF0F39 /* BusinessLayer */,
+				404DE74F254DC87900A16AB5 /* ServiceLayer */,
+				40C5CFDC254EF12000FF0F39 /* CoreLayer */,
+				404DE73C254DC5DB00A16AB5 /* Resource */,
+				404DE73D254DC5FB00A16AB5 /* MVVM */,
+				402FB4E4254DCDDE00A737B9 /* Model */,
+				402FB4F8254DD1CD00A737B9 /* Utils */,
 				404DE71F254DC32D00A16AB5 /* KBanktTestProject.xcdatamodeld */,
+				404DE727254DC32F00A16AB5 /* Info.plist */,
 			);
 			path = KBanktTestProject;
 			sourceTree = "<group>";
@@ -102,6 +286,202 @@
 			path = KBanktTestProjectTests;
 			sourceTree = "<group>";
 		};
+		404DE73B254DC5C200A16AB5 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				404DE716254DC32D00A16AB5 /* AppDelegate.swift */,
+				404DE718254DC32D00A16AB5 /* SceneDelegate.swift */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		404DE73C254DC5DB00A16AB5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFAE254EAF4B00FF0F39 /* categorys.json */,
+				402FB4FE254DD25900A737B9 /* Font */,
+				404DE724254DC32F00A16AB5 /* LaunchScreen.storyboard */,
+				404DE722254DC32F00A16AB5 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		404DE73D254DC5FB00A16AB5 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				404DE745254DC7E200A16AB5 /* ViewModel */,
+				404DE744254DC7D800A16AB5 /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		404DE744254DC7D800A16AB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				406DAF6B2550B02100AB1886 /* Checkout */,
+				402FB4F4254DD15E00A737B9 /* Category */,
+				402FB4F5254DD16A00A737B9 /* Provider */,
+				402FB4F7254DD18300A737B9 /* Receipt */,
+				402FB4F6254DD17B00A737B9 /* Payment */,
+				402FB502254DD37E00A737B9 /* BaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		404DE745254DC7E200A16AB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				406DAF6E2550B9C000AB1886 /* Checkout */,
+				40C5CFB5254EBA9300FF0F39 /* Category */,
+				406DAF732550C1AC00AB1886 /* Provider */,
+				406DAF742550C1B600AB1886 /* Payment */,
+				406DAF752550C1BF00AB1886 /* Receipt */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		404DE74F254DC87900A16AB5 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFB8254EC76500FF0F39 /* CDRepository */,
+				40C5CFB0254EAF8E00FF0F39 /* Network */,
+				404DE755254DC90000A16AB5 /* Builder */,
+				404DE750254DC8B600A16AB5 /* Router */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		404DE750254DC8B600A16AB5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				404DE753254DC8D700A16AB5 /* RouterProtocol.swift */,
+				404DE751254DC8C700A16AB5 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		404DE755254DC90000A16AB5 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				404DE758254DC92E00A16AB5 /* BuilderProtocol.swift */,
+				404DE756254DC91D00A16AB5 /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		406DAF6B2550B02100AB1886 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				406DAF6C2550B03300AB1886 /* CheckoutController.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		406DAF6E2550B9C000AB1886 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				406DAF6F2550B9DF00AB1886 /* CheckoutViewModelProtocol.swift */,
+				406DAF712550BA0100AB1886 /* CheckoutViewModel.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		406DAF732550C1AC00AB1886 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				404DE749254DC82200A16AB5 /* ProviderViewModel.swift */,
+				40D37F002550C540002B450A /* ProviderViewModelProtocol.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		406DAF742550C1B600AB1886 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				404DE74B254DC83A00A16AB5 /* PaymentViewModel.swift */,
+				40D37F022550C560002B450A /* PaymentViewModelProtocol.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		406DAF752550C1BF00AB1886 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				404DE74D254DC84800A16AB5 /* ReceiptViewModel.swift */,
+				40D37F042550C57B002B450A /* ReceiptViewModelProtocol.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		40C5CFA4254DD7A300FF0F39 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFA5254DD7B400FF0F39 /* CategoryCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		40C5CFA7254DF97F00FF0F39 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFA8254DF99300FF0F39 /* ProviderCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		40C5CFB0254EAF8E00FF0F39 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFB1254EAFC900FF0F39 /* NetworkService.swift */,
+				40C5CFB3254EAFDB00FF0F39 /* NetworkServiceProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40C5CFB5254EBA9300FF0F39 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				404DE746254DC80200A16AB5 /* CategoryViewModel.swift */,
+				40D37EFE2550C527002B450A /* CategoryViewModelProtocol.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		40C5CFB8254EC76500FF0F39 /* CDRepository */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFDA254EE99200FF0F39 /* CDRepository.swift */,
+			);
+			path = CDRepository;
+			sourceTree = "<group>";
+		};
+		40C5CFDC254EF12000FF0F39 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFDD254EF15000FF0F39 /* CoreDataManager.swift */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		40C5CFF7254F15D200FF0F39 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				40C5CFF8254F160B00FF0F39 /* CategoryBusinessLogic.swift */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		CA52947802A7926A111F6579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7D62713F1518108F19209A8 /* Pods-KBanktTestProject.debug.xcconfig */,
+				D95F87A11085771C1CF2C608 /* Pods-KBanktTestProject.release.xcconfig */,
+				1387177CFC1C00105C36D3CF /* Pods-KBanktTestProjectTests.debug.xcconfig */,
+				42DA4D805EE12C3B7B8945C5 /* Pods-KBanktTestProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +489,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 404DE735254DC32F00A16AB5 /* Build configuration list for PBXNativeTarget "KBanktTestProject" */;
 			buildPhases = (
+				255CB72B6545D18E027A2BCD /* [CP] Check Pods Manifest.lock */,
 				404DE70F254DC32D00A16AB5 /* Sources */,
 				404DE710254DC32D00A16AB5 /* Frameworks */,
 				404DE711254DC32D00A16AB5 /* Resources */,
+				434F513A2CF98751EE6CE55A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +508,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 404DE738254DC32F00A16AB5 /* Build configuration list for PBXNativeTarget "KBanktTestProjectTests" */;
 			buildPhases = (
+				8ED582304159003B85D0D302 /* [CP] Check Pods Manifest.lock */,
 				404DE728254DC32F00A16AB5 /* Sources */,
 				404DE729254DC32F00A16AB5 /* Frameworks */,
 				404DE72A254DC32F00A16AB5 /* Resources */,
@@ -184,8 +567,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				404DE726254DC32F00A16AB5 /* LaunchScreen.storyboard in Resources */,
+				40C5CFAF254EAF4B00FF0F39 /* categorys.json in Resources */,
+				402FB501254DD29700A737B9 /* NeuzeitGro-Reg.ttf in Resources */,
+				402FB4FF254DD29200A737B9 /* NeuzeitGro-Bol.ttf in Resources */,
 				404DE723254DC32F00A16AB5 /* Assets.xcassets in Resources */,
-				404DE71E254DC32D00A16AB5 /* Main.storyboard in Resources */,
+				402FB500254DD29500A737B9 /* NeuzeitGro-Lig.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,15 +584,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		255CB72B6545D18E027A2BCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KBanktTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		434F513A2CF98751EE6CE55A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KBanktTestProject/Pods-KBanktTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KBanktTestProject/Pods-KBanktTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KBanktTestProject/Pods-KBanktTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED582304159003B85D0D302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KBanktTestProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		404DE70F254DC32D00A16AB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C5CFA9254DF99300FF0F39 /* ProviderCell.swift in Sources */,
+				402FB4EE254DCECF00A737B9 /* ReceiptData.swift in Sources */,
+				404DE759254DC92E00A16AB5 /* BuilderProtocol.swift in Sources */,
 				404DE721254DC32D00A16AB5 /* KBanktTestProject.xcdatamodeld in Sources */,
-				404DE71B254DC32D00A16AB5 /* ViewController.swift in Sources */,
+				40C5CFDE254EF15100FF0F39 /* CoreDataManager.swift in Sources */,
+				40D37F032550C560002B450A /* PaymentViewModelProtocol.swift in Sources */,
+				406DAF6D2550B03300AB1886 /* CheckoutController.swift in Sources */,
+				40C5CFB7254EBDFC00FF0F39 /* ViewData.swift in Sources */,
+				40C5CFDB254EE99200FF0F39 /* CDRepository.swift in Sources */,
+				40C5CFA3254DD62F00FF0F39 /* CategoryLayout.swift in Sources */,
+				404DE74C254DC83A00A16AB5 /* PaymentViewModel.swift in Sources */,
+				404DE741254DC71000A16AB5 /* PaymentViewController.swift in Sources */,
+				402FB503254DD37E00A737B9 /* BaseViewController.swift in Sources */,
+				402FB4EA254DCE9300A737B9 /* ProviderData.swift in Sources */,
+				406DAF6A25508CB300AB1886 /* UIViewExt.swift in Sources */,
+				404DE74A254DC82200A16AB5 /* ProviderViewModel.swift in Sources */,
+				40C5CFB2254EAFC900FF0F39 /* NetworkService.swift in Sources */,
+				404DE752254DC8C700A16AB5 /* Router.swift in Sources */,
+				404DE71B254DC32D00A16AB5 /* CategoryViewController.swift in Sources */,
+				402FB4E6254DCE2700A737B9 /* CategoryData.swift in Sources */,
 				404DE717254DC32D00A16AB5 /* AppDelegate.swift in Sources */,
+				40C5CFAD254E0CB800FF0F39 /* TextFieldWithHeader.swift in Sources */,
+				40C5CFAB254E04E600FF0F39 /* CardView.swift in Sources */,
+				40C5CFA6254DD7B400FF0F39 /* CategoryCell.swift in Sources */,
+				402FB4E8254DCE8100A737B9 /* ErrorData.swift in Sources */,
+				404DE747254DC80200A16AB5 /* CategoryViewModel.swift in Sources */,
+				406DAF662550092F00AB1886 /* PairData.swift in Sources */,
+				402FB4EC254DCEAB00A737B9 /* CustomFieldData.swift in Sources */,
+				402FB4FA254DD1FB00A737B9 /* UIFontExt.swift in Sources */,
+				404DE754254DC8D700A16AB5 /* RouterProtocol.swift in Sources */,
+				40C5CFF9254F160B00FF0F39 /* CategoryBusinessLogic.swift in Sources */,
+				40D37F052550C57B002B450A /* ReceiptViewModelProtocol.swift in Sources */,
+				406DAF702550B9DF00AB1886 /* CheckoutViewModelProtocol.swift in Sources */,
+				404DE757254DC91D00A16AB5 /* Builder.swift in Sources */,
+				40D37F0725513E19002B450A /* Connnection.swift in Sources */,
+				406DAF682550436300AB1886 /* StringExt.swift in Sources */,
+				40D37F012550C540002B450A /* ProviderViewModelProtocol.swift in Sources */,
+				406DAF722550BA0100AB1886 /* CheckoutViewModel.swift in Sources */,
+				404DE74E254DC84800A16AB5 /* ReceiptViewModel.swift in Sources */,
+				402FB4F0254DCEF900A737B9 /* AmountData.swift in Sources */,
+				40D37EFF2550C527002B450A /* CategoryViewModelProtocol.swift in Sources */,
+				40C5CFB4254EAFDB00FF0F39 /* NetworkServiceProtocol.swift in Sources */,
+				404DE73F254DC6F600A16AB5 /* ProviderViewController.swift in Sources */,
 				404DE719254DC32D00A16AB5 /* SceneDelegate.swift in Sources */,
+				404DE743254DC73A00A16AB5 /* ReceiptController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,14 +720,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		404DE71C254DC32D00A16AB5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				404DE71D254DC32D00A16AB5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		404DE724254DC32F00A16AB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,6 +847,7 @@
 		};
 		404DE736254DC32F00A16AB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D62713F1518108F19209A8 /* Pods-KBanktTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +866,7 @@
 		};
 		404DE737254DC32F00A16AB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95F87A11085771C1CF2C608 /* Pods-KBanktTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +885,7 @@
 		};
 		404DE739254DC32F00A16AB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1387177CFC1C00105C36D3CF /* Pods-KBanktTestProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +908,7 @@
 		};
 		404DE73A254DC32F00A16AB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42DA4D805EE12C3B7B8945C5 /* Pods-KBanktTestProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

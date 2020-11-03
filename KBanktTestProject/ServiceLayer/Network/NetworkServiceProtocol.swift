@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import PromiseKit
+
+protocol NetworkServiceProtocol{
+    func getLocalCategorys() -> Promise<[CategoryData]>
+    func getPaymentCategories() -> Promise<[CategoryData]>
+    func getReceipt() -> Promise<ReceiptData>
+}
+
+enum NetworkError:Error{
+    case NOT_FOUND
+}

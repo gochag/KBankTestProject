@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol ProviderViewModelProtocol{
+    var updateView:((ViewData<CategoryData>) -> Void)? {get set}
+    func featchData()
+}
